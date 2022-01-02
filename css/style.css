@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .4s linear;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(115, 198, 255);
+    background: linear-gradient(356deg, rgb(51, 168, 247), rgba(9, 119, 185, 1));
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+}
+
+.title {
+    margin: 30px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.input-box {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box input {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid darkslateblue;
+}
+
+.input-box button {
+    width: 250px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: darkslateblue;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.result {
+    width: 50%;
+    padding: 40px;
+}
+
+.result {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.modal {
+    width: 270px;
+    height: 55px;
+    background-color: #eee;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    right: -100%;
+    border-right: 6px solid red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.show-modal {
+    right: 20px;
+}
+
+.modal span {
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        margin: 30px 0 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .input-box,
+    .result {
+        width: 100%;
+    }
+
+    .result {
+        padding: 20px;
+    }
+}
